@@ -61,8 +61,10 @@ void showContinent() {
 ### Time Enumeration (`time.hpp`) ⏰
 The `time.hpp` header includes enumerations for common time spans, making time management in contracts more intuitive.
 
+It also includes celestial cycles for the solar system to use in biomimetic tokenomics.
+
 #### Key Features:
-- **Varied Time Units**: Ranges from seconds to weeks for flexible time calculations.
+- **Varied Time Units**: Ranges from seconds to years for flexible time calculations.
 - **Simplified Time Handling**: Streamlines time-related operations in contracts.
 
 #### Usage in EOSIO Smart Contract:
