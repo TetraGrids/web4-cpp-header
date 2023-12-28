@@ -5,7 +5,7 @@ This header contains common time spans stored as enumerated lists to use in C++ 
 /*/
 
 enum class In {
-    /*/ --- Celestial Orbits --- /*/
+    /*/ --- Gregorian Times --- /*/
     Second = 1,                  // Second
     Minute = 60,                 // Minute
     FiveMinutes = 300,           // 5 Minutes
