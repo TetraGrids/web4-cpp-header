@@ -28,4 +28,13 @@ enum class In {
     PlutoOrbit = 7824384000,     // One orbit of Pluto around the Sun (approximated as 90560 days)
     AsteroidBeltOrbit = 12614400 // Approx orbit of an asteroid in the main belt (approximated as 1460 days )
 
+    /*/ --- Celestial Days in Seconds --- /*/
+    MercuryDay = 5063040,   // One day on Mercury (approximated as 58.6 Earth days)
+    VenusDay = 20995200,    // One day on Venus (approximated as 243 Earth days)
+    MarsDay = 88560,        // One day on Mars (approximated as 24.6 hours)
+    JupiterDay = 35640,     // One day on Jupiter (approximated as 9.9 hours)
+    SaturnDay = 38520,      // One day on Saturn (approximated as 10.7 hours)
+    UranusDay = 61920,      // One day on Uranus (approximated as 17.2 hours)
+    NeptuneDay = 57960,     // One day on Neptune (approximated as 16.1 hours)
+
 };
