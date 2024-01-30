@@ -14,8 +14,8 @@ This was created on-route to the upcoming RA system by [tetra.earth](https://tet
 1. [Countries Enumeration (`countries.hpp`)](#countries-enumeration)
 2. [Continents Enumeration (`continents.hpp`)](#continents-enumeration)
 3. [Time Enumeration (`time.hpp`)](#time-enumeration)
-4. [Getting Started](#getting-started)
-5. [License](#license)
+4. [Reward Series (`reward_series.hpp`)](#reward-series)
+
 
 ### Countries Enumeration (`countries.hpp`) 🌍
 The `countries.hpp` header provides a comprehensive enumeration of countries (`Countries_ISO3`) using ISO 3166-1 alpha-3 country codes.
@@ -83,6 +83,34 @@ void showTimeSpan() {
     In time_span = In::Day; // Value for a day (86400 seconds)
     eosio::print("Time Span in seconds: ", static_cast<int>(time_span));
 }
+```
+
+### Reward Series (`reward_series.hpp`) 💰
+The `reward_series.hpp` header includes a series of reward structures for use in tokenomics.
+
+#### Key Features:
+- **Flexible Reward Structures**: Provides a range of reward seriec for leveled tokenomics.
+- **Simple and Efficient**: Easy-to-use, with common series.
+- **Extendable**: Add new reward series, and extend the ones here if needed (they are cirrently 24 levels per series).
+
+#### Usage in EOSIO Smart Contract:
+```cpp
+#include "reward_series.hpp"
+
+// --- Get reward series --- //
+vector<uint64_t> reward_series_referral = getSeries(string("SILVER"));
+
+// --- Get User's level using the series --- //
+
+    uint32_t series_size_referral = reward_series_referral.size();
+
+    for (size_t i = 0; i < series_size_referral; ++i) {
+        if (refscore < reward_series_referral[i]) {
+            refscore_lvl = i + 1; // Update the refscore level based on the series
+            break;
+        }
+    }
+
 ```
 
 ## Getting Started 🚀
