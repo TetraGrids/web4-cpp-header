@@ -257,8 +257,6 @@ enum class Countries_ISO3 {
     ZWE = 716   // Zimbabwe
 };
 
-Certainly! Here's an enumeration in C++ using the provided ISO2 country codes and their corresponding numeric values:
-
 ```cpp
 enum class Countries_ISO2 {
     AF = 4,    // Afghanistan
